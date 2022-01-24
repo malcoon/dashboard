@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e28e4d0b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="bar-left">
+
+        <div class="profile">
+            <img src="assets/imgs/profile-img.svg" alt="Profile Image" class="profile-img">
+
+            <div class="profile-description">
+                <h4 class="name">Renilson Medeiros</h4>
+                <h5 class="description">Front-end Developer</h5>
+            </div>
+
+            <i class="edit-perfil fas fa-cog"></i>
+        </div>
+
+        <div class="bar-nav">
+            <a href="" class="bar-nav-link"><i class="fas fa-user-friends"></i> Lista de Clientes</a>
+            <a href="" class="bar-nav-link"><i class="fas fa-briefcase"></i> Projetos Ativos</a>
+            <a href="" class="bar-nav-link"><i class="fas fa-calendar"></i> Calendário</a>
+            <a href="" class="bar-nav-link"><i class="fas fa-comments"></i> Mensagens</a>
+            <a href="" class="bar-nav-link"><i class="fas fa-file-alt"></i> Pedidos</a>
+        </div>
+
+        <div class="social-media">
+            <h4 class="social-media-title">Minhas redes sociais</h4>
+
+            <div class="social-media-icons">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+                <a href=""><i class="fab fa-github-square"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fas fa-envelope-square"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- New Project -->
+    <section class="new-project">
+        <h3 class="new-project-title">Adicionar novo Projeto</h3>
+
+        <div class="inputs">
+            <div class="input-group">
+                <label>Nome do projeto</label>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="input-group">
+                <label for="date">Início</label>
+                <input type="date" name="" id="">
+              </div>
+
+            <div class="input-group">
+                <label>Prazo final</label>
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="input-group">
+                <label class="file" for="file">Carregar projeto</label>
+                <input type="file" id="file">
+            </div>
+
+            <div class="input-group">
+                <label>Valor</label>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="input-group">
+                <label>Categorias</label>
+                <input type="text" name="" id="">
+            </div>
+        </div>
+
+        <div class="new-project-btns">
+            <button class="new-project-primary-btn" type="submit">Salvar</button>
+            <button class="new-project-secondary-btn cancelar" >Cancelar</button>
+        </div>
+    </section>
+    
+
+    <main>
+        <div class="dashboard">
+
+            <div class="header-dashboard">
+                <div class="header-dashboard-left">
+                    <div class="header-dashboard-left-nav">
+                        <button class="header-dashboard-left-nav-link">Projetos Ativos</button>
+                        <button class="header-dashboard-left-nav-link">Projetos Entregues</button>
+                        <button class="header-dashboard-left-nav-link">Orçamentos</button>
+                        <button class="header-dashboard-left-nav-link">Projetos Arquivados</button>
+                    </div>
+                </div>
+
+                <button class="header-dashboard-btn" id="addProject" type="submit">
+                    <i class="fas fa-plus"></i> Add novo
+                </button>
+            </div>
+
+            <div class="content-dashboard">
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Website Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Fevereiro</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 4500,00</td>
+                            <td>Website, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Landing Page Bot</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Julho</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 800,00</td>
+                            <td>Landing Page, Bot</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mobile App Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Março</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 1200,00</td>
+                            <td>Mobile, App, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Website Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Fevereiro</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 4500,00</td>
+                            <td>Website, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Landing Page Bot</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Julho</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 800,00</td>
+                            <td>Landing Page, Bot</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mobile App Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Março</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 1200,00</td>
+                            <td>Mobile, App, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Website Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Fevereiro</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 4500,00</td>
+                            <td>Website, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Landing Page Bot</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Julho</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 800,00</td>
+                            <td>Landing Page, Bot</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mobile App Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Março</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 1200,00</td>
+                            <td>Mobile, App, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Website Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Fevereiro</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 4500,00</td>
+                            <td>Website, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Landing Page Bot</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Julho</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 800,00</td>
+                            <td>Landing Page, Bot</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+                <div class="table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Início</th>
+                            <th>Prazo final</th>
+                            <th>Projeto</th>
+                            <th>Valor</th>
+                            <th>Categorias</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mobile App Store</td>
+                            <td>24/01/2022</td>
+                            <td>24 de Março</td>
+                            <td><a href="" class="table-link">Download</a></td>
+                            <td>R$ 1200,00</td>
+                            <td>Mobile, App, Store</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <!-- separador -->
+
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<script src="assets/script.js"></script>
+    
+</body>
+</html>
